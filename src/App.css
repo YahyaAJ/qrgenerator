@@ -7,7 +7,7 @@
 
 body {
   text-align: center;
-  background-color: grey;
+  background-color: #1b2034;
   color: #fff;
   /* #1b2034 */
 }
@@ -17,6 +17,7 @@ img {
   width: 350px;
   height: 350px;
   margin: 2rem auto;
+  border-radius: 10px;
 }
 
 .app {
@@ -62,12 +63,32 @@ button {
   font-size: 1rem;
   padding: 8px;
   position: absolute;
-  right: .4rem;
-  top: .4rem;
+  right: .3rem;
+  top: .3rem;
   border-radius: 0.5rem;
 }
 a {
+  position: relative;
   font-size: 1.5rem;
+  padding: 1px 0px;
+  
+}
+a:hover{
+  color: #5940f1;
+}
+a::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #5940f1;
+  transform: scaleX(0);
+}
+a:hover:before {
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
 @media screen and (max-width: 600px) {
