@@ -6,10 +6,10 @@
 }
 
 body {
-  text-align: center;
   background-color: #1b2034;
   color: #fff;
   /* #1b2034 */
+  text-align: center;
 }
 
 img {
@@ -19,7 +19,13 @@ img {
   margin: 2rem auto;
   border-radius: 10px;
 }
-
+.loading {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
 .app {
   padding: 1rem;
 }
@@ -27,12 +33,12 @@ img {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-
+  text-align: center;
 }
 .for-link {
   width: 35%;
   margin: auto;
-  position: relative; 
+  position: relative;
   /* background: white; */
   /* border: 1px solid black; */
 }
@@ -63,20 +69,19 @@ button {
   font-size: 1rem;
   padding: 8px;
   position: absolute;
-  right: .3rem;
-  top: .3rem;
+  right: 0.3rem;
+  top: 0.3rem;
   border-radius: 0.5rem;
 }
 a {
   position: relative;
   font-size: 1.5rem;
   padding: 1px 0px;
-  
 }
-a:hover{
+a:hover {
   color: #5940f1;
 }
-a::before{
+a::before {
   position: absolute;
   content: "";
   left: 0;
@@ -96,19 +101,18 @@ a:hover:before {
     width: 300px;
     height: 300px;
   }
-  .for-link{
+  .for-link {
     width: 100%;
-
   }
-  input{
+  input {
     padding: 0.5rem 1em;
   }
-  button{
+  button {
     position: relative;
     width: 100%;
     top: auto;
     right: auto;
-    margin-top: .5rem;
-    padding: .7rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
   }
 }
